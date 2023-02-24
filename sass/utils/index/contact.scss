@@ -1,0 +1,31 @@
+.contact {
+  color: $primary-white-color;
+  text-transform: uppercase;
+  &__a {
+  }
+  &__h3 {
+  }
+  &__li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+width: 35px;
+    &:hover {
+      background-color: $accent-color;
+      border-radius: 25px;
+    }
+  }
+  &__svg {
+    fill: $primary-white-color;
+  }
+  &__ul {
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    width: 231px;
+    margin-top: 14px;
+  }
+}

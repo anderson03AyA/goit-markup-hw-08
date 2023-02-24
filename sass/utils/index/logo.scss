@@ -1,0 +1,60 @@
+/* ---------------------logo section header-------------------------  */
+.logo {
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.logo-white:hover,
+.logo-white:focus {
+  color: $logo-black;
+}
+.contacts-menu {
+  display: flex;
+  &__icon {
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+  }
+  &__item {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  &__item:focus .contacts-menu__icon,
+  &__item:focus .contacts-menu__item,
+  &__item:hover .contacts-menu__icon,
+  &__item:hover .contacts-menu__item {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+  &__li {
+    display: flex;
+    text-align: center;
+  }
+  &__li:focus .contacts-menu__icon,
+  &__li:focus .contacts-menu__item,
+  &__li:hover .contacts-menu__icon,
+  &__li:hover .contacts-menu__item {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+  &__li:hover .item {
+    fill: $accent-color;
+    color: $accent-color;
+  }
+}
+// ---------------- logo black fond ---------
+.logo.black-fond:hover,
+.logo.black-fond:focus {
+  color: var(#ffffff);
+}

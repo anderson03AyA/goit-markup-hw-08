@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+@import "./utils/index/variables";
+@import "./utils/global/global.scss";
+@import "./utils/global/nav";
+@import "./utils/index/header";
+@import "./utils/index/logo.scss";
+@import "./utils/index/solutions.scss";
+@import "./utils/index/modal.scss";
+@import "./utils/index/benefits.scss";
+@import "./utils/index/what-we-do.scss";
+@import "./utils/index/our-team.scss";
+@import "./utils/index/customers.scss";
+@import "./utils/index/footer.scss";
+@import "./utils/index/contact.scss";
+
+
+@import "./utils/portfolio/buttons.scss";
+@import "./utils/portfolio/cards.scss";
+@import "./utils/portfolio/cards-overlay.scss";

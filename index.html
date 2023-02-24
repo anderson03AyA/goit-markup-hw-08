@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <title>WebStudio</title>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header class="page-header">
+      <nav class="nav__index">
+        <!-- Logo  -->
+        <a class="logo logo-white" href="./index.html">Web studio</a>
+        <!--  menú -->
+        <ul class="nav-menu ul">
+          <li class="nav-menu__li">
+            <a class="nav-menu__page nav-menu__page--current"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="nav-menu__li">
+            <a class="nav-menu__page" href="./portafolio.html">Portfolio</a>
+          </li>
+          <li class="nav-menu__li">
+            <a class="nav-menu__page" href="#">Contactos</a>
+          </li>
+        </ul>
+        <!-- contacts -->
+      </nav>
+      <ul class="contacts-menu ul">
+        <li class="contacts-menu__li">
+          <a class="contacts-menu__item" href="#">
+            <svg
+              class="contacts-menu__icon contacts-menu__icon--email"
+              height="12px"
+              width="16px"
+            >
+              <use href="./images/SVG/sprite-sheet.svg#email"></use>
+            </svg>
+            andersonsolarte03@gmail.com
+          </a>
+        </li>
+        <li class="contacts-menu__li">
+          <a class="contacts-menu__item" href="#">
+            <svg
+              class="contacts-menu__icon contacts-menu__icon--smartphone"
+              height="16px"
+              width="10px"
+            >
+              <use href="./images/SVG/sprite-sheet.svg#smartphone"></use>
+            </svg>
+            +573125023912</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <!-- main content section -->
+    <main>
+      <!--  solutions section -->
+      <section class="solutions">
+        <h1 class="solutions__title">efective solutions for your bussines</h1>
+        <button
+          class="solutions__button--primary"
+          type="button"
+          id="data-modal-open"
+          data-modal-open
+        >
+          Request our service
+        </button>
+      </section>
+
+      <!--modal windows -->
+      <div class="backdrop is-hidden" id="data-modal" data-modal>
+        <div class="modal">
+          <button class="modal__close" id="data-modal-close" data-modal-close>
+            <svg class="close__modal-icon">
+              <use href="./images/SVG/modal__close.svg#close"></use>
+            </svg>
+          </button>
+          <form action=""></form>
+          <!--modal content -->
+          <p class="modal__title">
+            Leave your information, we will contact you
+          </p>
+          <div class="data">
+            <div class="data__div">
+              <label for="data__name" class="data__label">Name</label>
+              <input id="data__name" type="text" class="data__input" />
+              <svg class="data__svg data__svg--user">
+                <use href="./images/SVG/modal__close.svg#user"></use>
+              </svg>
+            </div>
+
+            <div class="data__div">
+              <label for="data__phone" class="data__label">phone</label>
+              <input id="data__phone" type="tel" class="data__input" />
+              <svg class="data__svg data__svg--phone">
+                <use href="./images/SVG/modal__close.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="data__div">
+              <label for="data__email" class="data__label">E-mail</label>
+              <input id="data__email" type="email" class="data__input" />
+              <svg class="data__svg data__svg--email">
+                <use href="./images/SVG/modal__close.svg#email"></use>
+              </svg>
+            </div>
+
+            <div class="data__div">
+              <div class="data__div">
+                <label
+                  for="data__comments"
+                  class="data__label data__labelcoments"
+                  >comments</label
+                >
+                <textarea
+                  id="data__comments"
+                  class="data__input-multiline"
+                  rows="5"
+                  cols="20"
+                  placeholder="enter text"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer-modal">
+            <div class="terms">
+              <div class="terms__div">
+                <input
+                  type="checkbox"
+                  id="terms__checked"
+                  class="terms__input"
+                />
+                <label class="terms__label" for="terms__checked">
+                  I agree with the newsletter and accept the terms and
+                  conditions</label
+                >
+              </div>
+
+              <button class="terms__send" type="submit">send</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Benefits section -->
+      <section class="section benefits-content">
+        <div class="container">
+          <ul class="benefits-list">
+            <li>
+              <div class="benefits">
+                <svg
+                  class="benefits__icon benefits__icon--antenna"
+                  width="70px"
+                  height="70px"
+                >
+                  <use href="./images/SVG/sprite-sheet.svg#antena"></use>
+                </svg>
+              </div>
+              <a class="benefits__title">attention to details</a>
+              <p class="benefits__description">
+                we go into all the details and processes of your bussines to
+                develop a customized solutions.
+              </p>
+            </li>
+
+            <li>
+              <div class="benefits">
+                <svg
+                  class="benefits__icon benefits__icon--clock"
+                  width="70px"
+                  height="70px"
+                >
+                  <use href="./images/SVG/sprite-sheet.svg#clock"></use>
+                </svg>
+              </div>
+              <a class="benefits__title">Puntuality</a>
+              <p class="benefits__description">
+                with us, you can feel safe and secure. An inportant principle of
+                company: respect your time and respect agreed deadlines.
+              </p>
+            </li>
+
+            <li>
+              <div class="benefits">
+                <svg
+                  class="benefits__icon benefits__icon--diagram"
+                  width="70px"
+                  height="70px"
+                >
+                  <use href="./images/SVG/sprite-sheet.svg#diagram"></use>
+                </svg>
+              </div>
+              <a class="benefits__title">planning</a>
+              <p class="benefits__description">
+                You will be able to observe and participate in every phase of
+                the development and application of solutions.
+              </p>
+            </li>
+
+            <li>
+              <div class="benefits">
+                <svg
+                  class="benefits__icon benefits__icon--astronaut"
+                  width="70px"
+                  height="70px"
+                >
+                  <use href="./images/SVG/sprite-sheet.svg#astronaut"></use>
+                </svg>
+              </div>
+              <a class="benefits__title">Modern technologies</a>
+              <p class="benefits__description">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- What we do section -->
+      <section class="no-top-padding">
+        <h2 class="what-do-we__h2">What do we do</h2>
+        <div class="what-do-we">
+          <!-- images -->
+          <ul class="what-do-we__ul">
+            <li>
+              <img src="./images/imagen.jpg" alt="desarrollo Web" width="370" />
+              <div class="what-do-we__div">
+                <p class="what-do-we__p">applications of desktop</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/imagen1.jpg"
+                alt="desarrollo Movil"
+                width="370"
+              />
+              <div class="what-do-we__div">
+                <p class="what-do-we__p">applications mobiles</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/imagen2.jpg"
+                alt="Ilustracion de color"
+                width="370"
+              />
+              <div class="what-do-we__div">
+                <p class="what-do-we__p">applications of dessing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!------------- our team ------------>
+      <section class="section our-team">
+        <h2 class="our-team__h2">Our team</h2>
+        <div class="our-team__container">
+          <!-- cards -->
+          <ul class="cards">
+            <li class="cards__li">
+              <img
+                src="images/imagen3.jpg"
+                alt="diseñador de productos"
+                width="270"
+              />
+              <h3>Andrés Cubo</h3>
+              <p>designer of products</p>
+              <ul class="cars__icon--ul">
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="/images/SVG/sprite-sheet.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="cards__li">
+              <img
+                src="images/imagen4.jpg"
+                alt="Desarrolladora Frontend"
+                width="270"
+              />
+              <h3>Carla Palacios</h3>
+              <p>Front End Developer</p>
+              <ul class="cars__icon--ul">
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="/images/SVG/sprite-sheet.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="cards__li">
+              <img src="images/imagen5.jpg" alt="Marketing" width="270" />
+              <h3>Mario dorado</h3>
+              <p>Marketing</p>
+              <ul class="cars__icon--ul">
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="cards__li">
+              <img src="images/imagen6.jpg" alt="Diseñador IU" width="270" />
+              <h3>Pablo Mijangos</h3>
+              <p>ui designer</p>
+              <ul class="cars__icon--ul">
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="/images/SVG/sprite-sheet.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="cars__icon--li">
+                  <a href="#">
+                    <svg class="cars__icon--icon" height="20px" width="20px">
+                      <use href="./images/SVG/sprite-sheet.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-------------regular costomers ------------>
+      <section class="section customers">
+        <h2 class="customers__h2">Regular Customers</h2>
+        <div class="customers__container">
+          <ul class="customers__ul">
+            <li class="customers__li">
+              <svg class="customers__icon" width="41px" height="46.7px">
+                <use href="./images/SVG/sprite-sheet.svg#company-1"></use>
+              </svg>
+            </li>
+            <li class="customers__li">
+              <svg class="customers__icon" width="40px" height="52px">
+                <use href="./images/SVG/sprite-sheet.svg#company-2"></use>
+              </svg>
+            </li>
+            <li class="customers__li">
+              <svg class="customers__icon" width="43.46px" height="41.58px">
+                <use href="./images/SVG/sprite-sheet.svg#company-3"></use>
+              </svg>
+            </li>
+            <li class="customers__li">
+              <svg class="customers__icon" width="84.44px" height="40.62px">
+                <use href="./images/SVG/sprite-sheet.svg#company-4"></use>
+              </svg>
+            </li>
+            <li class="customers__li">
+              <svg class="customers__icon" width="62.54px" height="45.43px">
+                <use href="./images/SVG/sprite-sheet.svg#company-5"></use>
+              </svg>
+            </li>
+            <li class="customers__li">
+              <svg class="customers__icon" width="93.73px" height="43.93px">
+                <use href="./images/SVG/sprite-sheet.svg#company-6"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <a class="footer__logo" href="">WebStudio</a>
+          <address class="footer__address">
+            <ul>
+              <li>
+                <a
+                  class="footer__a"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+                >
+              </li>
+              <li>
+                <a class="footer__a" href="mailto:"
+                  >andersonsolarte03@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__a" href="tel:+573125023912">3125023912</a>
+              </li>
+            </ul>
+          </address>
+        </li>
+        <li class="contact">
+          <h3 class="contact__h3">Encuentranos en:</h3>
+          <ul class="contact__ul">
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="suscription">
+          <ul class="suscription__ul">
+            <li class="suscription__li">
+              <label class="suscription__label" for="suscription__email"
+                >SUSCRÍBASE al boletín informativo
+              </label>
+            </li>
+            <li class="suscription__li">
+              <input
+                class="suscription__email"
+                type="email"
+                name="suscription__email"
+                id="suscription__email"
+                placeholder="Correo electrónico"
+              />
+              <button class="suscription__button" type="button">
+                Suscríbase
+                <svg class="suscription__svg">
+                  <use href="./images/SVG/sprite-sheet.svg#enviar"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+
+    <!--We put before the closing tag body -->
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

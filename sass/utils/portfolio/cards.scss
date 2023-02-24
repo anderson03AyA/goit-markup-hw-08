@@ -1,0 +1,49 @@
+.product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 50px;
+
+  &__container {
+      background: $primary-white-color;
+    box-sizing: border-box;
+    border: 1px solid $color-border;
+    list-style: none;
+    padding-bottom: 20px;
+    width: 370px;
+    height: 404px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
+
+.product .link{
+    text-decoration: none;
+}
+
+.description {
+   
+  &__title {
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: $primary-black-color;
+    padding-left: 24px;
+    padding-top: 20px;
+    text-decoration: none;
+  }
+  &__text {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $primary-text-color;
+    padding-left: 24px;
+    text-decoration: none;
+  }
+}

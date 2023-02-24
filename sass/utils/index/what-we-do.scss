@@ -1,0 +1,71 @@
+// <!-- What we do section -->
+.no-top-padding {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: $primary-black-color;
+  gap: 5px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.what-do-we {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: $primary-black-color;
+  gap: 5px;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin: 0;
+  padding: 0;
+
+  &__div {
+    position: absolute;
+    background: $background-text-oscuro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 369px;
+    height: 70px;
+  }
+  &__p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+  }
+  &__h2 {
+    padding-bottom: 10px;
+    text-transform: none;
+  }
+  &__ul {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 30px;
+    list-style: none;
+    margin-top: 55px;
+    width: 1170px;
+    height: 294px;
+  }
+}

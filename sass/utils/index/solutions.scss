@@ -1,0 +1,58 @@
+
+/* --------------------solutions section-----------------------  */
+.solutions__button--primary:hover,
+.solutions__button--primary:focus {
+  background-color: $button-primary-hover;
+  cursor: pointer;
+}
+.solutions {
+  padding: 94px 0;
+  background: linear-gradient($banner-gray, $banner-gray),
+    url("../images/mainbackgraond.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  height: 600px;
+  padding: 200px var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  max-width: 1600px;
+
+  &__button {
+    &--primary {
+      font-size: 16px;
+      background-color: $accent-color;
+      color: $primary-white-color;
+      text-transform: none;
+      width: 200px;
+      height: 50px;
+      margin-top: 30px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border: none;
+      position: relative;
+      z-index: 5;
+    }
+  }
+  &__title {
+    color: $primary-white-color;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06;
+    text-align: center;
+    text-transform: uppercase;
+    
+  margin-top: 200px;
+    width: 696px;
+    height: 120px;
+    position: relative;
+    z-index: 5;
+  }
+}

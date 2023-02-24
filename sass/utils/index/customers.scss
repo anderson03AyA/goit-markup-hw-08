@@ -1,0 +1,55 @@
+//<!-------------regular customers ------------>
+.customers {
+  padding-top: 59px;
+  padding-bottom: 146px;
+  &__container {
+  }
+  &__h2 {
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    color: $primary-black-color;
+    gap: 3px;
+  }
+  &__icon {
+    fill: $primary-text-color;
+    &:hover {
+      fill: $primary-text-color;
+    }
+  }
+  &__li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 170px;
+    height: 92px;
+    border: solid 1px $border-gray;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      border: solid 1px $accent-color;
+      border-radius: 5px;
+    }
+    &:hover .customers__icon {
+      fill: $accent-color;
+    }
+  }
+  &__ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin: 44.02px auto 5px auto;
+    width: 1170px;
+    margin: 0, 215;
+  }
+}

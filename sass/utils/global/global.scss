@@ -1,0 +1,15 @@
+// -------global---------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ul {
+  list-style: none;
+}
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $primary-white-color;
+}

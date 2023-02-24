@@ -1,0 +1,47 @@
+.img__container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.img__overlay {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: transform 250ms ease;
+  overflow: hidden;
+  transform: translatey(0);
+  width: 100%;
+  height: 0%;
+  transform: translateY(100%);
+  bottom: 0;
+}
+.product__container:hover  .overlay { 
+  height: 100%;
+  transform: translateY(0%);
+  background-color: $accent-color-transparence;
+}
+.overlay__p {
+  color: $primary-white-color;
+  width: 322px;
+  height: 168px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <title>WebStudio</title>
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header class="page-header">
+      <nav class="nav__index">
+        <!-- Logo  -->
+        <a class="logo white-font" href="./index.html">Web Studio</a>
+        <!-- menu  -->
+        <ul  class="nav-menu ul">
+          <li class="nav-menu__li">
+            <a  class="nav-menu__page" href="./index.html">studio</a>
+          </li>
+          <li class="nav-menu__li">
+            <a class="nav-menu__page nav-menu__page--current" href="./portfolio.html">portfolio</a>
+          </li>
+          <li class="nav-menu__li">
+            <a class="nav-menu__page" href="">contact</a></li>
+        </ul>
+      </nav>
+      <!-- contacts  -->
+      <ul class="contacts-menu ul">
+        <li class="contacts-menu__li">
+          <a   class="contacts-menu__item" href="#">
+           <svg class="contacts-menu__icon contacts-menu__icon--email" height="12px" width="16px">
+              <use xlink:href="./images/SVG/sprite-sheet.svg#email"></use>
+            </svg>
+            andersonsolarte03@gmail.com
+          </a>
+        </li>
+        <li class="contacts-menu__li">
+          <a class="contacts-menu__item" href="#">
+            <svg class="contacts-menu__icon contacts-menu__icon--smartphone" height="16px" width="10px">
+              <use href="./images/SVG/sprite-sheet.svg#smartphone"></use>
+            </svg>
+            +573125023912
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section-portfolio">
+        <div class="container">
+          <!-- Menu tabs  -->
+          <ul class="list-buttons">
+            <li><button class="button button__current" type="button">All</button></li>
+            <li><button class="button" type="button">Web-Sites</button></li>
+            <li><button class="button" type="button">App</button></li>
+            <li><button class="button" type="button">Design</button></li>
+            <li><button class="button" type="button">Marketing</button></li>
+          </ul>
+
+          <!-- card list  -->
+          <ul class="product">
+           <li class="product__container">
+              <a href="#" class="link">
+                <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/tecnoduck.jpg"
+                  alt="TecnoDuck website"
+                  width="350px"
+                  height="294px"
+                />
+
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                </div>
+                <div class="description">
+                  <h2 class="description__title">Tecnoduck</h2>
+                  <p class="description__text">Web-site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/poster.jpg"
+                  alt="Poster New Orlean vs Golden Star"
+                  width="350px"
+                  height="294px"
+                />
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                  </div>
+                      <div class="description">
+                        <h2 class="description__title"> Poster New Orlean vs Golden Star </h2>
+                        <p class="description__text">Design</p>
+                      </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/restaurant.jpg"
+                  alt="Seafood Restaurant App"
+                  width="350px"
+                  height="294px"
+                />
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div>
+                      </div>
+                      
+                <div class="description">
+                <h2 class="description__title">Seafood Restaurant</h2>
+                <p class="description__text">Apps</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                   src="./images/prime.jpg" alt="Project Prime" 
+                   width="350px"
+                   height="294px" />
+                   <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div>
+                     </div>
+                      
+                <div class="description">
+                <h2 class="description__title">Project Prime</h2>
+                <p class="description__text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/boxes.jpg"
+                  alt="Project Boxes "
+                  width="350px"
+                  height="294px"
+                />
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div>
+                       </div>
+        
+                <div class="description">
+                <h2 class="description__title">Project Boxes</h2>
+                <p class="description__text">Apps</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/inspiration.jpg"
+                  alt="Inspiration has no limits"
+                  width="350px"
+                  height="294px"
+                />
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div> 
+                     </div>
+                      
+                <div class="description">
+                <h2 class="description__title">Inspiration has no limits</h2>
+                <p class="description__text">web-site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/edition.jpg"
+                  alt="Limited Edition "
+                  width="350px"
+                  height="294px"
+                />
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div>
+                       </div>
+                      
+                <div class="description">
+                <h2 class="description__title">Limited Edition</h2>
+                <p class="description__text">Design</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/lab.jpg" alt="Project LAB" width="350px" height="294px"/>
+                  <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div>
+                       </div>
+                      
+                <div class="description">
+                <h2 class="description__title">Project LAB</h2>
+                <p class="description__text">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="product__container">
+              <a href="#" class="link">
+                 <div class="img__container">
+                  <img class="img__overlay"
+                  src="./images/evolution.jpg"
+                  alt="Growing Bussines App"
+                  width="350px"
+                  height="294px"
+                />
+                <div class="overlay" width="350px" height="294px">
+                  <p class="overlay__p"> Tecnoduck is a state-of-the-art coronavirus distribution platform. 
+                    Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                  </p>
+                     </div>
+                       </div>
+                      
+                <div class="description">
+                <h2 class="description__title">Growing Bussines</h2>
+                <p class="description__text">Apps</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+      <footer class="footer">
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <a class="footer__logo" href="">WebStudio</a>
+          <address class="footer__address">
+            <ul>
+              <li>
+                <a
+                  class="footer__a"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+                >
+              </li>
+              <li>
+                <a class="footer__a" href="mailto:"
+                  >andersonsolarte03@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__a" href="tel:+573125023912">3125023912</a>
+              </li>
+            </ul>
+          </address>
+        </li>
+        <li class="contact">
+          <h3 class="contact__h3">Encuentranos en:</h3>
+          <ul class="contact__ul">
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__li">
+              <a href="" class="contact__a">
+                <svg class="contact__svg" height="20px" width="20px">
+                  <use href="./images/SVG/sprite-sheet.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="suscription">
+          <ul class="suscription__ul">
+            <li class="suscription__li">
+              <label class="suscription__label" for="suscription__email"
+                >SUSCRÍBASE al boletín informativo
+              </label>
+            </li>
+            <li class="suscription__li">
+              <input
+                class="suscription__email"
+                type="email"
+                name="suscription__email"
+                id="suscription__email"
+                placeholder="Correo electrónico"
+              />
+              <button class="suscription__button" type="button">
+                Suscríbase
+                <svg class="suscription__svg">
+                  <use href="./images/SVG/sprite-sheet.svg#enviar"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

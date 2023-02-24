@@ -1,0 +1,213 @@
+
+//-------------modal windows -----------
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  scale: 100%;
+  background: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform-origin: left top;
+  padding: 8px;
+
+  &__close {
+    position: relative;
+    display: flex;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__title {
+    width: 448px;
+    height: 23px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $primary-black-color;
+  }
+}
+
+// ------------ form modal  -------------------
+.close {
+  &__modal-icon {
+    fill: $background-black;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  &__modal-icon:hover {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $accent-color;
+  }
+}
+.data {
+  margin: 12px auto 20px;
+  width: 448px;
+  height: 342px;
+
+  &__div {
+    position: relative;
+    margin-top: 10px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__svg {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    left: 12px;
+    top: 30px;
+    &--user {
+      width: 12px;
+      height: 12px;
+    }
+    &--phone {
+      width: 13px;
+      height: 13px;
+    }
+    &--email {
+      width: 15px;
+      height: 12px;
+    }
+  }
+  &__label {
+    height: 14px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+}
+//------- input data-----
+.data {
+  &__input {
+    box-sizing: border-box;
+
+    width: 448px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 35px;
+  }
+  &__input-multiline {
+    padding: 12px 16px;
+    box-sizing: border-box;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    resize: none;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+}
+.data__input:focus,
+.data__input:hover {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: $accent-color;
+}
+.data__input:hover + .data__svg,
+.data__input:focus + .data__svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $accent-color;
+}
+.data__input:focus .data__svg {
+  fill: palegoldenrod;
+  background-color: palegoldenrod;
+}
+// ----------------- form footer -----------
+.footer-modal {
+  margin-top: 20px;
+}
+.terms {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+  &__div {
+    display: flex;
+    flex-direction: row;
+    gap: 8.38px;
+    width: 425px;
+    height: 24px;
+    margin: 0 auto;
+  }
+  &__input {
+    width: 16px;
+    height: 15px;
+  }
+  &__label {
+  }
+  &__send {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    background: $button-primary-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+  }
+}

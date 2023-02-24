@@ -1,0 +1,105 @@
+//<!------------- our team ------------>
+.our-team {
+  background-color: $background-gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 94px;
+  &__h2 {
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+    color: var(--primary-black-color);
+    gap: 3px;
+    text-transform: capitalize;
+  }
+  &__container {
+    background-color: $background-gray;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  gap: 10px;
+  width: 1170px;
+
+  &__li {
+    align-items: center;
+    text-align: center;
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__h3 {
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: $primary-black-color;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+.cars__icon--ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+  padding: 0px 20px;
+  width: 206px;
+  height: 44px;
+  margin: 16px auto 30px;
+
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.cars {
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    padding: 0px 20px;
+    width: 206px;
+    height: 44px;
+    margin: 16px auto 30px;
+
+    &--icon {
+      fill: $primary-text-color;
+      &:hover {
+        fill: $primary-white-color;
+      }
+    }
+
+    &--li {
+      &:hover {
+        background-color: $accent-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        height: 35px;
+        width: 35px;
+      }
+      &:hover .cars__icon--icon {
+        fill: $primary-white-color;
+      }
+    }
+  }
+}
