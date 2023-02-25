@@ -37,3 +37,28 @@
   height: 122px;
   list-style: none;
 }
+
+//  ---------------- mobile
+@media (min-width: 320px) and (max-width: 480px) {
+  .benefits {
+    z-index: 10;
+    width: 90vw;
+    flex-direction: column;
+
+    &__description {
+      display: flex;
+      width: 90vw;
+      flex-wrap: wrap;
+      font-weight: 400;
+      line-height: 24px;
+      font-size: 14px;
+      color: $primary-text-color;
+    }
+  }
+
+  .benefits-list {
+    flex-direction: column;
+     width: 100vw;
+  height: 100%;
+  }
+}

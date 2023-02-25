@@ -64,3 +64,13 @@
     color: $primary-text-color;
     gap: 30px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .nav-menu.ul{
+      display: none;
+  }
+  .contacts-menu.ul {
+    display: none;
+  }
+}
