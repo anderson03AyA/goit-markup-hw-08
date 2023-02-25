@@ -488,6 +488,7 @@
   .benefits__title {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
   .benefits-list {
     flex-direction: column;
@@ -568,6 +569,11 @@
   height: 294px;
 }
 
+@media (min-width: 320px) and (max-width: 780px) {
+  .what-do-we--not {
+    display: none;
+  }
+}
 .our-team {
   background-color: #f5f4fa;
   display: flex;

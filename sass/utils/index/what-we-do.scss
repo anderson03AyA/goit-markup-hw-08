@@ -69,3 +69,9 @@
     height: 294px;
   }
 }
+
+@media (min-width: 320px) and (max-width:780px) {
+  .what-do-we--not{
+    display: none;
+  }
+}
