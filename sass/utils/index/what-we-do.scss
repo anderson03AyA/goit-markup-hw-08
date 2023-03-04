@@ -1,8 +1,7 @@
 // <!-- What we do section -->
 .no-top-padding {
-  padding-top: 0px;
   padding-bottom: 94px;
-  margin-top: 300px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,8 @@
   gap: 5px;
   padding-left: 215px;
   padding-right: 215px;
-  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 100px;
   padding: 0;
 
   &__div {
@@ -53,6 +53,9 @@
     color: $primary-white-color;
   }
   &__h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
     padding-bottom: 10px;
     text-transform: none;
   }

@@ -13,23 +13,11 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 720px){
   .page-header{
-    display: inline-flex;
-    
-    padding: 16px;
+    width: 100vw; 
+    padding: 0;
     &__navegation {
-      margin-left:40vw;
-    }
-  }
-}
-@media (min-width: 479.9px) and (max-width: 720px) {
-  .page-header{
-    display: inline-flex;
-    
-    padding: 16px;
-    &__navegation {
-      margin-left:35vw;
     }
   }
 }
