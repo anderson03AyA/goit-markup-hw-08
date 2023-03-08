@@ -1,6 +1,6 @@
 //<!------------ footer ------------>
 .footer {
-   background-color: $background-black;
+  background-color: $background-black;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 0;
@@ -28,24 +28,23 @@
   }
   &__li {
     width: 231px;
-height: 81px;
+    height: 81px;
   }
   &__a {
-width: 231px;
-height: 21px;
+    width: 231px;
+    height: 21px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
 
-letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-color: $primary-white-color;
-text-decoration : none;
-
+    color: $primary-white-color;
+    text-decoration: none;
   }
 }
 .suscription {
@@ -91,33 +90,62 @@ text-decoration : none;
     padding-right: 30px;
     width: 200px;
     height: 50px;
-    
-background: $accent-color;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-margin-left: 12px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
 
-color: $primary-white-color;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $primary-white-color;
   }
   &__svg {
     width: 50px;
     height: 50px;
-  float: left;
-  margin-left: 140px;
-  margin-top: -30px;
-  overflow: hidden;
-}
+    float: left;
+    margin-left: 140px;
+    margin-top: -30px;
+    overflow: hidden;
+  }
 }
 
 li {
   list-style: none;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    display: flex;
+    &__ul {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  .suscription {
+    &__ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+      &__li {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__button {
+      margin-top: 25px;
+    }
+  }
 }

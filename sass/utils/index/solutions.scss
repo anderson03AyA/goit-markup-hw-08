@@ -1,4 +1,3 @@
-
 /* --------------------solutions section-----------------------  */
 .solutions__button--primary:hover,
 .solutions__button--primary:focus {
@@ -48,8 +47,8 @@
     letter-spacing: 0.06;
     text-align: center;
     text-transform: uppercase;
-    
-  margin-top: 200px;
+
+    margin-top: 200px;
     width: 696px;
     height: 120px;
     position: relative;
@@ -57,13 +56,15 @@
   }
 }
 
-
 //  ---------------- mobile
-@media (min-width: 320px) and (max-width: 720px) {
- .solutions{
-  &__title {
-    width: 100vw;
-    padding: 0 0.1vw;
+@media (min-width: 320px) and (max-width: 768px) {
+  .solutions {
+    &__title {
+      width: 100vw;
+      padding: 0 60px;
+      font-size: 26px;
+line-height: 42px;
+letter-spacing: 0.06em;
+    }
   }
- }
 }
