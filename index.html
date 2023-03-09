@@ -8,8 +8,8 @@
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
-    />   
-  <script src="https://unpkg.com/body-scroll-lock"></script>
+    />
+    <script src="https://unpkg.com/body-scroll-lock"></script>
     <title>WebStudio</title>
   </head>
 
@@ -18,11 +18,12 @@
     <header class="page-header js-menu-container">
       <nav class="nav__index">
         <a class="logo logo-white" href="./index.html">Web studio</a>
-       
+
         <!--  menú -->
         <ul class="nav-menu ul header-mobile__nav">
           <li class="nav-menu__li">
-            <a class="nav-menu__page nav-menu__page--current"
+            <a
+              class="nav-menu__page nav-menu__page--current"
               href="./index.html"
               >Studio</a
             >
@@ -62,13 +63,31 @@
           >
         </li>
       </ul>
-       <!-- svg navegation  -->
-        <svg class="page-header__navegation js-open-menu"
-         height="22px"
-              width="27px">
-          <use class="page-header__navegation--use" href="./images/SVG/cellphone.svg#nav"></use>
+      <!-- svg navegation  -->
+      <div class="page-header icon " onclick="toggleMenuIcon()">
+        <svg
+          class="page-header__navegation js-open-menu"
+          height="22px"
+          width="27px"
+        >
+          <use
+            class="page-header__navegation--use"
+            href="./images/SVG/cellphone.svg#nav"
+          ></use>
         </svg>
-         
+      </div>
+      <div class="page-header icon-x active " onclick="toggleMenuIcon()">
+        <svg
+          class="page-header__navegation js-open-menu"
+          height="22px"
+          width="27px"
+        >
+          <use
+            class="page-header__navegation--use"
+            href="./images/SVG/modal__close.svg#close"
+          ></use>
+        </svg>
+      </div>
     </header>
 
     <!-- main content section -->

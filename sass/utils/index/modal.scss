@@ -1,4 +1,3 @@
-
 //-------------modal windows -----------
 
 .backdrop {
@@ -176,7 +175,6 @@
 .terms {
   display: flex;
   flex-direction: column;
-
   gap: 30px;
   &__div {
     display: flex;
@@ -189,8 +187,6 @@
   &__input {
     width: 16px;
     height: 15px;
-  }
-  &__label {
   }
   &__send {
     width: 200px;
@@ -209,5 +205,44 @@
 
     letter-spacing: 0.06em;
     color: $primary-white-color;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .modal {
+    width: 90vw;
+    height: 80vh;
+    height: 609px;
+    max-width: 420px;
+    max-height: 609px;
+    &__title {
+      height: 70px;
+      width: 80vw;
+      max-width: 400px;
+      flex-wrap: wrap;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .data {
+    &__input {
+      width: 80vw;
+      max-width: 400px;
+    }
+      &__input-multiline {
+        width: 80vw;
+        max-width: 400px;
+      }
+  }
+  .terms {
+    flex-wrap: wrap;
+     width: 80vw;
+        max-width: 400px;
+        &__label {
+          width: 75vw;
+        max-width: 380px;
+        }
   }
 }

@@ -14,7 +14,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .page-header {
     overflow: hidden;
-    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     width: 100vw;
     padding: 0 15px;
     &__navegation {
@@ -28,6 +28,21 @@
       }
     }
   }
+   //cambiar icon --- a icon X
+    .page-header.icon {
+      display: block;
+    }
+    .page-header.icon.active {
+      display: none;
+    }
+
+    .page-header.icon-x {
+      display: block;
+    }
+     .page-header.icon-x.active {
+        display: none;
+      }
+
   .nav__index {
     position: relative;
     z-index: 2;
@@ -42,7 +57,7 @@
 
   .header-mobile {
     overflow: hidden;
-    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     z-index: 11;
     flex-direction: column;
     display: flex;
@@ -74,10 +89,10 @@
     }
   }
 }
+
 @media (min-height: 1000px) {
   .header-mobile {
     &__info {
-      
       top: 30vh;
     }
   }

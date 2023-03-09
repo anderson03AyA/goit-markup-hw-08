@@ -51,6 +51,18 @@
     cursor: pointer;
     fill: #2196f3;
   }
+  .page-header.icon {
+    display: block;
+  }
+  .page-header.icon.active {
+    display: none;
+  }
+  .page-header.icon-x {
+    display: block;
+  }
+  .page-header.icon-x.active {
+    display: none;
+  }
   .nav__index {
     position: relative;
     z-index: 2;
@@ -291,7 +303,7 @@
   z-index: 5;
 }
 
-@media (min-width: px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .solutions__title {
     width: 100vw;
     padding: 0 60px;
@@ -496,6 +508,42 @@
   color: #ffffff;
 }
 
+@media (min-width: 0px) and (max-width: 768px) {
+  .modal {
+    width: 90vw;
+    height: 80vh;
+    height: 609px;
+    max-width: 420px;
+    max-height: 609px;
+  }
+  .modal__title {
+    height: 70px;
+    width: 80vw;
+    max-width: 400px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .data__input {
+    width: 80vw;
+    max-width: 400px;
+  }
+  .data__input-multiline {
+    width: 80vw;
+    max-width: 400px;
+  }
+  .terms {
+    flex-wrap: wrap;
+    width: 80vw;
+    max-width: 400px;
+  }
+  .terms__label {
+    width: 75vw;
+    max-width: 380px;
+  }
+}
 /* ------------------benefist ---------------------*/
 .benefits {
   align-items: center;
