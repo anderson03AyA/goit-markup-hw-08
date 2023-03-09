@@ -9,7 +9,6 @@
     mobileMenu.classList.toggle("header-mobile");
     //oculta etiquetas sobrantes a del nav
 
-    document.querySelector(".logo").style.display = "none";
     document.querySelector(".nav-menu.ul").style.display = "flex";
     document.querySelector(".contacts-menu").style.display = "flex";
     //--------------
@@ -37,4 +36,11 @@ function toggleMenuIcon() {
   icons.forEach(function (icon) {
     icon.classList.toggle("active");
   });
+  toggleLogo()
+}
+
+//ocultar logo web
+function toggleLogo() {
+  const logo = document.querySelector(".logo");
+  logo.classList.toggle("ocultar");
 }

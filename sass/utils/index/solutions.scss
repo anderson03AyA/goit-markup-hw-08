@@ -59,6 +59,10 @@
 //  ---------------- mobile
 @media (min-width: 0px) and (max-width: 768px) {
   .solutions {
+    background: linear-gradient($banner-gray, $banner-gray),
+    url("../images/mainbackgraond-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     &__title {
       width: 100vw;
       padding: 0 60px;

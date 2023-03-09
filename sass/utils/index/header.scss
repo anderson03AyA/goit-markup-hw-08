@@ -9,6 +9,9 @@
   border-bottom: 1px solid #0000002d;
 
   padding: 30px 215px 30px 215px;
+  &__navegation {
+    display: none;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -18,8 +21,9 @@
     width: 100vw;
     padding: 0 15px;
     &__navegation {
+      display: block;
       position: absolute;
-      top: 15px;
+      top: 30px;
       right: 20px;
       &:hover {
         scale: 1.1;
@@ -47,7 +51,8 @@
     position: relative;
     z-index: 2;
   }
-  .logo.logo-white {
+  .logo.ocultar {
+    display: none;
     position: absolute;
     display: flex;
     width: 200px;
@@ -97,3 +102,4 @@
     }
   }
 }
+
