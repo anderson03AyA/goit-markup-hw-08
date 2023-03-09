@@ -66,6 +66,42 @@
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
+  .nav-menu {
+    &__page {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+  }
+  .contacts-menu {
+    
+    &__item p{
+      flex-wrap: wrap;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 40px;
+      /* identical to box height */
+
+      letter-spacing: 0.02em;
+    }
+    &__item span {
+      color: $accent-color;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      /* identical to box height */
+
+      letter-spacing: 0.02em;
+    }
+  }
   .nav-menu.ul {
     display: none;
   }

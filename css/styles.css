@@ -107,7 +107,7 @@
     bottom: 0;
   }
 }
-@media (min-height: 1000px) {
+@media (min-height: 1050px) {
   .header-mobile__info {
     top: 30vh;
   }
@@ -178,6 +178,35 @@
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
+  .nav-menu__page {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .contacts-menu__item p {
+    flex-wrap: wrap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
+  .contacts-menu__item span {
+    color: #2196f3;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+  }
   .nav-menu.ul {
     display: none;
   }
