@@ -17,11 +17,87 @@
   background-color: #ffffff;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .container {
     max-width: 100vw;
     margin: 0 auto;
     padding: 0 0;
+  }
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 var(--container-padding);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1764705882);
+  padding: 30px 215px 30px 215px;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .page-header {
+    overflow: hidden;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    width: 100vw;
+    padding: 0 15px;
+  }
+  .page-header__navegation {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .page-header__navegation:hover {
+    scale: 1.1;
+    cursor: pointer;
+    fill: #2196f3;
+  }
+  .nav__index {
+    position: relative;
+    z-index: 2;
+  }
+  .logo.logo-white {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    margin-top: -20px;
+    z-index: 10;
+  }
+  .header-mobile {
+    overflow: hidden;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    z-index: 11;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+  .header-mobile__nav {
+    gap: 10px;
+    display: flex;
+    line-height: 0px;
+    flex-direction: column;
+    position: absolute;
+    top: 15vh;
+    left: -40vw;
+  }
+  .header-mobile__nav a::after {
+    display: none;
+  }
+  .header-mobile__nav li {
+    margin-top: -40px;
+  }
+  .header-mobile__info {
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    left: 10vw;
+    top: 50vh;
+    bottom: 0;
+  }
+}
+@media (min-height: 1000px) {
+  .header-mobile__info {
+    top: 30vh;
   }
 }
 .nav__index {
@@ -89,28 +165,12 @@
   gap: 30px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .nav-menu.ul {
     display: none;
   }
   .contacts-menu.ul {
     display: none;
-  }
-}
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  padding: 0 var(--container-padding);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1764705882);
-  padding: 30px 215px 30px 215px;
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .page-header {
-    width: 100vw;
-    padding: 0 15px;
   }
 }
 /* ---------------------logo section header-------------------------  */
@@ -170,7 +230,7 @@
   color: var(#ffffff);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .logo {
     width: 100%;
     margin-left: 15px;
@@ -231,7 +291,7 @@
   z-index: 5;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: px) and (max-width: 768px) {
   .solutions__title {
     width: 100vw;
     padding: 0 60px;
@@ -475,7 +535,7 @@
   list-style: none;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .section .container {
     padding: 0;
     margin: 0 10px;
@@ -583,7 +643,7 @@
   height: 294px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .what-do-we--not {
     display: none;
   }
@@ -685,7 +745,7 @@
   fill: #ffffff;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .our-team__container {
     display: flex;
     justify-content: center;
@@ -766,7 +826,7 @@
   margin: 0, 215;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .customers__container {
     display: flex;
     flex-wrap: wrap;
@@ -853,7 +913,7 @@
   /* identical to box height, or 125% */
   align-items: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
   width: 358px;
   height: 50px;
@@ -894,7 +954,7 @@ li {
   list-style: none;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .footer {
     display: flex;
   }

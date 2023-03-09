@@ -8,19 +8,19 @@
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    />   
+  <script src="https://unpkg.com/body-scroll-lock"></script>
     <title>WebStudio</title>
   </head>
 
   <body>
     <!-- header section -->
-    <header class="page-header">
+    <header class="page-header js-menu-container">
       <nav class="nav__index">
-        <!-- Logo  -->
         <a class="logo logo-white" href="./index.html">Web studio</a>
        
         <!--  menú -->
-        <ul class="nav-menu ul ">
+        <ul class="nav-menu ul header-mobile__nav">
           <li class="nav-menu__li">
             <a class="nav-menu__page nav-menu__page--current"
               href="./index.html"
@@ -36,7 +36,7 @@
         </ul>
         <!-- contacts -->
       </nav>
-      <ul class="contacts-menu ul ">
+      <ul class="contacts-menu ul header-mobile__info">
         <li class="contacts-menu__li">
           <a class="contacts-menu__item" href="#">
             <svg
@@ -63,12 +63,12 @@
         </li>
       </ul>
        <!-- svg navegation  -->
-        <svg class="page-header__navegation"
+        <svg class="page-header__navegation js-open-menu"
          height="22px"
               width="27px">
           <use class="page-header__navegation--use" href="./images/SVG/cellphone.svg#nav"></use>
         </svg>
-        
+         
     </header>
 
     <!-- main content section -->
@@ -295,7 +295,7 @@
                 <li class="cars__icon--li">
                   <a href="#">
                     <svg class="cars__icon--icon" height="20px" width="20px">
-                      <use href="/images/SVG/sprite-sheet.svg#twitter"></use>
+                      <use href="./images/SVG/sprite-sheet.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -335,7 +335,7 @@
                 <li class="cars__icon--li">
                   <a href="#">
                     <svg class="cars__icon--icon" height="20px" width="20px">
-                      <use href="/images/SVG/sprite-sheet.svg#twitter"></use>
+                      <use href="./images/SVG/sprite-sheet.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -400,7 +400,7 @@
                 <li class="cars__icon--li">
                   <a href="#">
                     <svg class="cars__icon--icon" height="20px" width="20px">
-                      <use href="/images/SVG/sprite-sheet.svg#instagram"></use>
+                      <use href="./images/SVG/sprite-sheet.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -559,5 +559,6 @@
 
     <!--We put before the closing tag body -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu_nav.js"></script>
   </body>
 </html>

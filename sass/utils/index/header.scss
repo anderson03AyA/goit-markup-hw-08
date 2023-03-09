@@ -8,15 +8,77 @@
 
   border-bottom: 1px solid #0000002d;
 
-  
   padding: 30px 215px 30px 215px;
 }
 
-
-@media (min-width: 320px) and (max-width: 768px){
-  .page-header{
-    width: 100vw; 
+@media (min-width: 0px) and (max-width: 768px) {
+  .page-header {
+    overflow: hidden;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    width: 100vw;
     padding: 0 15px;
-   
+    &__navegation {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      &:hover {
+        scale: 1.1;
+        cursor: pointer;
+        fill: $accent-color;
+      }
+    }
+  }
+  .nav__index {
+    position: relative;
+    z-index: 2;
+  }
+  .logo.logo-white {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    margin-top: -20px;
+    z-index: 10;
+  }
+
+  .header-mobile {
+    overflow: hidden;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    z-index: 11;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    position: relative;
+
+    &__nav {
+      gap: 10px;
+      display: flex;
+      line-height: 0px;
+      flex-direction: column;
+      position: absolute;
+      top: 15vh;
+      left: -40vw;
+      & a::after {
+        display: none;
+      }
+      & li {
+        margin-top: -40px;
+      }
+    }
+    &__info {
+      flex-direction: column;
+      display: flex;
+      position: absolute;
+      left: 10vw;
+      top: 50vh;
+      bottom: 0;
+    }
+  }
+}
+@media (min-height: 1000px) {
+  .header-mobile {
+    &__info {
+      
+      top: 30vh;
+    }
   }
 }

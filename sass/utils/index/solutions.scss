@@ -57,14 +57,14 @@
 }
 
 //  ---------------- mobile
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: px) and (max-width: 768px) {
   .solutions {
     &__title {
       width: 100vw;
       padding: 0 60px;
       font-size: 26px;
-line-height: 42px;
-letter-spacing: 0.06em;
+      line-height: 42px;
+      letter-spacing: 0.06em;
     }
   }
 }

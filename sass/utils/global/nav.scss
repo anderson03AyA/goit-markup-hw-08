@@ -1,4 +1,4 @@
- // --------- nav ----------
+// --------- nav ----------
 .nav__index {
   display: flex;
   align-items: center;
@@ -60,15 +60,14 @@
 }
 
 .contacts-menu.ul {
-    fill: $primary-text-color;
-    color: $primary-text-color;
-    gap: 30px;
+  fill: $primary-text-color;
+  color: $primary-text-color;
+  gap: 30px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  
-  .nav-menu.ul{
-      display: none;
+@media (min-width: 0px) and (max-width: 768px) {
+  .nav-menu.ul {
+    display: none;
   }
   .contacts-menu.ul {
     display: none;
