@@ -117,6 +117,11 @@
     top: 30vh;
   }
 }
+@media (min-width: 767.5px) and (max-width: 1200px) {
+  .page-header.js-menu-container {
+    padding: 0 20px;
+  }
+}
 .nav__index {
   display: flex;
   align-items: center;
@@ -217,6 +222,17 @@
   }
   .contacts-menu.ul {
     display: none;
+  }
+}
+@media (min-width: 767.5px) and (max-width: 1200px) {
+  .nav__index {
+    padding-left: 15px;
+  }
+  .contacts-menu.ul {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 20px 0;
   }
 }
 /* ---------------------logo section header-------------------------  */
@@ -657,6 +673,35 @@
     height: auto;
   }
 }
+@media (min-width: 767.5px) and (max-width: 1200px) {
+  .section.benefits-content {
+    padding: 0;
+  }
+  .section .container {
+    padding: 0;
+    width: 100vw;
+  }
+  .benefits-list {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .benefits-list__li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40vw;
+    height: auto;
+  }
+  .benefits {
+    transform: translatex(25%);
+  }
+}
 .no-top-padding {
   padding-bottom: 94px;
   margin-top: 200px;
@@ -731,6 +776,11 @@
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
+  .what-do-we--not {
+    display: none;
+  }
+}
+@media (min-width: 767.5px) and (max-width: 1200px) {
   .what-do-we--not {
     display: none;
   }
@@ -860,6 +910,28 @@
     margin-top: 30px;
   }
 }
+@media (min-width: 767.5px) and (max-width: 1200px) {
+  .cards {
+    justify-content: center;
+    width: 90vw;
+    padding: 0 2vw 0 2vw;
+    height: 100%;
+  }
+  .cards__li {
+    width: 40vw;
+    max-width: 450px;
+    margin-bottom: 25px;
+  }
+  .cards__h3 {
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #212121;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 .customers {
   padding-top: 59px;
   padding-bottom: 146px;
@@ -913,7 +985,7 @@
   margin: 0, 215;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .customers__container {
     display: flex;
     flex-wrap: wrap;
@@ -1041,7 +1113,7 @@ li {
   list-style: none;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 1200px) {
   .footer {
     display: flex;
   }
@@ -1064,6 +1136,13 @@ li {
   }
   .suscription__button {
     margin-top: 25px;
+  }
+}
+@media (min-width: 767.5px) and (max-width: 1200px) {
+  .suscription__li--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .contact {

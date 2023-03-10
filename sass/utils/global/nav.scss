@@ -109,3 +109,16 @@
     display: none;
   }
 }
+
+@media (min-width:767.5px) and (max-width: 1200px) {
+  .nav__index {
+    padding-left: 15px;
+  }
+  .contacts-menu.ul {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    
+    padding: 20px 0;
+  }
+}
